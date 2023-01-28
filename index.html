@@ -6,10 +6,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantdex</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <h1>My first project about plants</h1>
+
+
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <a class="navbar-brand" href="#">PlantDex</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-4">
+                <li class="nav-item">
+                    <a class="nav-link" data-value="home" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="portfolio" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="Github" href="#"> Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="blog" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " data-value="contact" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--
+    <div class="plantdex p-xl-5 p-lg-4 p-3">
+        <div class="container-fluid">
+            <div class="row justify-content-center plantrow">
+                <button class="plantCard btn" type="button">
+                    <div class="plantImg">
+                        <img src="images/sansevieria-houseplant.jpeg" alt="sansevieria image">
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div> -->
+
+
+
+    <!-- Card section -->
+    <div class="plantCards">
+        <div class="container">
+            <h1 class="text-center">PlantDex</h1>
+            <div class="row">
+                <div class="col-md-3 col-lg-3 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/sansevieria-houseplant.jpeg" alt="sansevieria image" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Sansevieria <br> Snake Plant</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/peace-lily-houseplant.jpeg" alt="peace-lily image" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Peace Lily </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/neoregelia-bromeliad-plant.jpeg" alt="bromeliad image" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">neoregelia <br> bromeliad</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/birds-nest-fern-plant.jpeg" alt="bromeliad image" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">birds nest fern </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/philodendron-silver-trailing-house-plant.jpeg" alt="bromeliad image"
+                                class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">philodendron silver</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-12">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="images/syngonium-houseplant-pink.jpeg" alt="bromeliad image" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">syngonium</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+
 </body>
 
 </html>
