@@ -10,12 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -33,32 +29,21 @@
                     <a class="nav-link" data-value="home" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="portfolio" href="#">Portfolio</a>
+                    <a class="nav-link" target="_blank" data-value="portfolio"
+                        href="https://manali-decoding.github.io/">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="Github" href="#"> Github</a>
+                    <a class="nav-link" target="_blank" data-value="Github" href="https://github.com/manali-decoding">
+                        Github</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="blog" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " data-value="contact" href="#">Contact</a>
+                    <a class="nav-link" target="_blank" data-value="blog"
+                        href="https://designsbymanali.medium.com/">Blog</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <!--
-    <div class="plantdex p-xl-5 p-lg-4 p-3">
-        <div class="container-fluid">
-            <div class="row justify-content-center plantrow">
-                <button class="plantCard btn" type="button">
-                    <div class="plantImg">
-                        <img src="images/sansevieria-houseplant.jpeg" alt="sansevieria image">
-                    </div>
-                </button>
-            </div>
-        </div>
-    </div> -->
+
 
     <!-- Card section -->
     <div class="plantCards">
@@ -101,7 +86,8 @@
                 <div class="col-md-3 col-lg-3 col-sm-12">
                     <div class="card" data-id="birds-nest">
                         <div class="card-img">
-                            <img src="images/birds-nest-fern-plant.jpeg" alt="bromeliad image" class="img-fluid">
+                            <img src="images/birds-nest-fern-plant.jpeg" alt="birds nest fern picture"
+                                class="img-fluid">
                         </div>
 
                         <div class="card-body">
@@ -112,7 +98,7 @@
                 <div class="col-md-3 col-lg-3 col-sm-12">
                     <div class="card" data-id="silver-pothos">
                         <div class="card-img">
-                            <img src="images/philodendron-silver-trailing-house-plant.jpeg" alt="bromeliad image"
+                            <img src="images/philodendron-silver-trailing-house-plant.jpeg" alt="silver pothos picture"
                                 class="img-fluid">
                         </div>
 
@@ -124,11 +110,35 @@
                 <div class="col-md-3 col-lg-3 col-sm-12">
                     <div class="card" data-id="syngonium">
                         <div class="card-img">
-                            <img src="images/syngonium-houseplant-pink.jpeg" alt="bromeliad image" class="img-fluid">
+                            <img src="images/syngonium-houseplant-pink.jpeg" alt="syngonium plant picture"
+                                class="img-fluid">
                         </div>
 
                         <div class="card-body">
                             <h4 class="card-title">syngonium</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-12">
+                    <div class="card" data-id="Aglaonema">
+                        <div class="card-img">
+                            <img src="images/aglaonema-silver-bay-plants-close.jpeg" alt="Aglaonema Silver Bay picture"
+                                class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Aglaonema Silver Bay</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-12">
+                    <div class="card" data-id="fittonia">
+                        <div class="card-img">
+                            <img src="images/fittonia-house-plants.jpeg" alt="Fittonia picture" class="img-fluid">
+                        </div>
+
+                        <div class="card-body">
+                            <h4 class="card-title">Fittonia</h4>
                         </div>
                     </div>
                 </div>
@@ -139,18 +149,14 @@
     <!-- Modal -->
     <div class="modal-overlay">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <article class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-plantName">Sansevieria
                         Snake Plant</h1>
-                    <h2 class="modal-subheader">Plant Care</h2>
 
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="fa fa-times-circle-o modal_closeBtn" aria-hidden="true"></i>
                     </button>
-                    <!-- <button class="close">
-                        <i class="fa fa-window-close" aria-hidden="true" modal_closeBtn"></i>
-                    </button> -->
                 </div><!-- End of Modal-header -->
                 <div class="modal-body">
                     <div class="modal-left">
@@ -225,8 +231,8 @@
                         <img src="images/sansevieria-houseplant.jpeg" alt="snake plant image" class="modal_img">
                     </div>
                 </div> <!-- End of Modal-body -->
-            </div><!-- End of Modal-content -->
-        </div> <!-- End of Modal-dialog -->
+            </article>
+        </div><!-- End of Modal-dialog -->
     </div> <!-- End of Modal-overlay -->
 
     <script src="script.js"></script>
