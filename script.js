@@ -31,7 +31,7 @@ const closeBtn = document.querySelector('.close');
 card.forEach(function (c) {
   c.addEventListener('click', function (e) {
     const plantCard = e.currentTarget.dataset.id;
-    //console.log(plantCard);
+    console.log(plantCard);
     handleCardButtonClick();
     //console.log(modalOverlay.classList);
   });
@@ -46,9 +46,9 @@ function handleCardButtonClick() {
   modalOverlay.classList.toggle('open-modal');
 }
 
-window.addEventListener('DOMContentLoaded', function () {
-  displayPlantSpecs(plantSpecs);
-});
+// window.addEventListener('DOMContentLoaded', function () {
+//   displayPlantSpecs(plantSpecs);
+// });
 
 // function displayPlantSpecs(specs) {
 //   let displaySpecs = [specs].map(function(plant){
