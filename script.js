@@ -26,10 +26,13 @@ const plantSpecs = [
 
 const card = document.querySelectorAll('.card');
 const modalOverlay = document.querySelector('.modal-overlay');
-const closeBtn = document.querySelector('.close');
 
 // let modalBody = document.querySelector('.modal-body');
 let modalContent = document.querySelector('.modal-content');
+
+function handleCardButtonClick() {
+  modalOverlay.classList.toggle('open-modal');
+}
 
 card.forEach(function (c) {
   c.addEventListener('click', function (e) {
@@ -41,9 +44,19 @@ card.forEach(function (c) {
       // console.log('calling from outside of the fn --- ' + desc);
       // console.log(desc);
       modalContent.innerHTML = desc;
+      attachCloseHandlerToOverlay();
     }
   });
 });
+
+function attachCloseHandlerToOverlay() {
+  const closeBtn = document.querySelector('.close');
+  closeBtn.addEventListener('click', function () {
+    console.log('i am clicked');
+    console.log(modalOverlay.classList);
+    handleCardButtonClick();
+  });
+}
 
 function displayPlantSpecs() {
   return `<div class="modal-header">
@@ -105,7 +118,6 @@ function displayPlantSpecs() {
                     <div class="description">
                         <ul>
                             <li><span class="specDesc">${plantSpecs[1]['soil'][0]}</span></li>
-                            <li><span class="specDesc">${plantSpecs[1]['soil'][1]}</span></li>
                         </ul>
                     </div>
                 </div>
@@ -129,17 +141,4 @@ function displayPlantSpecs() {
                 </article>
 
               </div>`;
-}
-
-//
-// <article class="modal-left">
-// </article>
-
-closeBtn.addEventListener('click', function () {
-  //console.log(modalOverlay.classList);
-  handleCardButtonClick();
-});
-
-function handleCardButtonClick() {
-  modalOverlay.classList.toggle('open-modal');
 }
