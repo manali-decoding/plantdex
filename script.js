@@ -1,98 +1,114 @@
-const plantSpecs = {
-  'Spidar plant': {
-    name: 'spiderplant',
-    title: 'Spider Plant',
-    light: 'Shade to partial sun',
-    water: 'water when soil dries out',
-    temp: '70-90F',
-    insects: [
-      'preferes well draining soil',
-      'Add perlite or orchid bark to potting mix',
-    ],
-    humidity: 'average',
+// const plantSpecs = {
+//   'Spidar plant': {
+//     name: 'spiderplant',
+//     title: 'Spider Plant',
+//     light: 'Shade to partial sun',
+//     water: 'water when soil dries out',
+//     temp: '70-90F',
+//     insects: [
+//       'preferes well draining soil',
+//       'Add perlite or orchid bark to potting mix',
+//     ],
+//     humidity: 'average',
+//     img: 'images/4chlorpohytumcurlyspiderplat_bonnie_2_2000x.jpeg',
+//   },
+//   'Peace lily': {
+//     name: 'peace-lily',
+//     title: 'Peace Lily',
+//     light: 'indoors with natural indirect sunlight',
+//     water: 'water when top soil feels dry',
+//     temp: '65-80F',
+//     insects: ['peat based potting mix with perlite and sand'],
+//     humidity: 'average',
+//     img: 'images/peace-lily-houseplant.jpeg',
+//   },
+//   bromeliad: {
+//     name: 'bromeliad',
+//     title: 'Neoregelia Bromeliad',
+//     light: 'indoors with natural indirect sunlight',
+//     water: 'water when top soil feels dry',
+//     temp: '65-80F',
+//     insects: ['preferes well draining soil'],
+//     humidity: 'average',
+//     img: 'images/neoregelia-bromeliad-plant.jpeg',
+//   },
+//   birdsNest: {
+//     name: 'Birds-Nest-Fern',
+//     title: 'Birds Nest Fern',
+//     light: 'indoors with natural indirect sunlight',
+//     water: 'dont let the top of the soil dry',
+//     temp: '65-80F',
+//     insects: ['peat based potting mix with perlite and sand'],
+//     humidity: 'above average',
+//     img: 'images/birds-nest-fern-plant.jpeg',
+//   },
+//   marblepothos: {
+//     name: 'marblepothos',
+//     title: 'Marble Pothos',
+//     light: 'indoors with natural indirect sunlight',
+//     water: 'water when top soil feels dry',
+//     temp: '65-80F',
+//     insects: ['peat based potting mix with perlite and sand'],
+//     humidity: 'average',
+//     img: 'images/pothos-marble-queen-plant.jpeg',
+//   },
+//   splitleafphilodendron: {
+//     name: 'splitleafphilodendron',
+//     title: 'Split Leaf Philodendron',
+//     light: 'indoors with natural indirect sunlight',
+//     water: 'water when top soil feels dry',
+//     temp: '65-80F',
+//     insects: ['peat based potting mix with perlite and sand'],
+//     humidity: 'average',
+//     img: 'images/splitleaf.jpeg',
+//   },
+//   aglaonema: {
+//     name: 'Aglaonema-Silver-Bay',
+//     title: 'Aglaonema Silver Bay',
+//     light: 'indoors with natural indirect sunlight',
+//     water: 'water when top soil feels dry',
+//     temp: '65-80F',
+//     insects: ['peat based potting mix with perlite and sand'],
+//     humidity: 'average',
+//     img: 'images/aglaonema-silver-bay-plants-close.jpeg',
+//   },
+//   fiddleleaffig: {
+//     name: 'fiddleleaffig',
+//     title: 'Fiddle Leaf Fig',
+//     light: 'indoors with natural indirect sunlight',
+//     water: 'water when top soil feels dry',
+//     temp: '65-80F',
+//     insects: ['peat based potting mix with perlite and sand'],
+//     humidity: 'average',
+//     img: 'images/fiddleleaffig.jpeg',
+//   },
+// };
+
+const finalPlantSpecs = {
+  'Spider plant': {
     img: 'images/4chlorpohytumcurlyspiderplat_bonnie_2_2000x.jpeg',
   },
   'Peace lily': {
-    name: 'peace-lily',
-    title: 'Peace Lily',
-    light: 'indoors with natural indirect sunlight',
-    water: 'water when top soil feels dry',
-    temp: '65-80F',
-    insects: ['peat based potting mix with perlite and sand'],
-    humidity: 'average',
     img: 'images/peace-lily-houseplant.jpeg',
   },
-  bromeliad: {
-    name: 'bromeliad',
-    title: 'Neoregelia Bromeliad',
-    light: 'indoors with natural indirect sunlight',
-    water: 'water when top soil feels dry',
-    temp: '65-80F',
-    insects: ['preferes well draining soil'],
-    humidity: 'average',
+  'Guzmania Sunnytime': {
     img: 'images/neoregelia-bromeliad-plant.jpeg',
   },
-  birdsNest: {
-    name: 'Birds-Nest-Fern',
-    title: 'Birds Nest Fern',
-    light: 'indoors with natural indirect sunlight',
-    water: 'dont let the top of the soil dry',
-    temp: '65-80F',
-    insects: ['peat based potting mix with perlite and sand'],
-    humidity: 'above average',
+  'Birdnest fern': {
     img: 'images/birds-nest-fern-plant.jpeg',
   },
-  marblepothos: {
-    name: 'marblepothos',
-    title: 'Marble Pothos',
-    light: 'indoors with natural indirect sunlight',
-    water: 'water when top soil feels dry',
-    temp: '65-80F',
-    insects: ['peat based potting mix with perlite and sand'],
-    humidity: 'average',
+  'White Pothos': {
     img: 'images/pothos-marble-queen-plant.jpeg',
   },
-  splitleafphilodendron: {
-    name: 'splitleafphilodendron',
-    title: 'Split Leaf Philodendron',
-    light: 'indoors with natural indirect sunlight',
-    water: 'water when top soil feels dry',
-    temp: '65-80F',
-    insects: ['peat based potting mix with perlite and sand'],
-    humidity: 'average',
+  'Splitleaf Philodendron': {
     img: 'images/splitleaf.jpeg',
   },
-  aglaonema: {
-    name: 'Aglaonema-Silver-Bay',
-    title: 'Aglaonema Silver Bay',
-    light: 'indoors with natural indirect sunlight',
-    water: 'water when top soil feels dry',
-    temp: '65-80F',
-    insects: ['peat based potting mix with perlite and sand'],
-    humidity: 'average',
+  'Chinese Evergreen': {
     img: 'images/aglaonema-silver-bay-plants-close.jpeg',
   },
-  fiddleleaffig: {
-    name: 'fiddleleaffig',
-    title: 'Fiddle Leaf Fig',
-    light: 'indoors with natural indirect sunlight',
-    water: 'water when top soil feels dry',
-    temp: '65-80F',
-    insects: ['peat based potting mix with perlite and sand'],
-    humidity: 'average',
+  'Fidleleaf fig': {
     img: 'images/fiddleleaffig.jpeg',
   },
-};
-
-const finalPlantSpecs = {
-  'Spider plant': {},
-  'Peace lily': {},
-  'Guzmania Sunnytime': {},
-  'Birdnest fern': {},
-  'White Pothos': {},
-  'Splitleaf Philodendron': {},
-  'Chinese Evergreen': {},
-  'Fidleleaf fig': {},
 };
 
 const card = document.querySelectorAll('.card');
@@ -114,6 +130,7 @@ const settings = {
 
 $.ajax(settings).done(getPlantInfo);
 
+// 2. HANDLE THE CLICK EVENT AND OPEN THE MODAL
 // Object.keys(finalPlantSpecs).forEach((k) => {
 card.forEach(function (c) {
   c.addEventListener('click', function (e) {
@@ -132,7 +149,19 @@ card.forEach(function (c) {
     }
   });
 });
-// });
+
+function handleCardButtonClick() {
+  modalOverlay.classList.toggle('open-modal');
+}
+
+function attachCloseHandlerToOverlay() {
+  const closeBtn = document.querySelector('.close');
+  closeBtn.addEventListener('click', function () {
+    handleCardButtonClick();
+  });
+}
+
+// 3. POPULATE THE DATA
 
 function getPlantInfo(resp) {
   // build the data
@@ -159,31 +188,9 @@ function getPlantInfo(resp) {
   }
 }
 
-// 2. HANDLE THE CLICK EVENT AND OPEN THE MODAL
-
-function handleCardButtonClick() {
-  modalOverlay.classList.toggle('open-modal');
-}
-
-function attachCloseHandlerToOverlay() {
-  const closeBtn = document.querySelector('.close');
-  closeBtn.addEventListener('click', function () {
-    handleCardButtonClick();
-  });
-}
-
 // 3. DISPLAY THE DATA ON THE MODAL
 
 function displayPlantSpecs(plantCard) {
-  // let insectsArr = '';
-  // console.log(finalPlantSpecs[plantCard]['insects'][1]);
-  // for (let index = 0; index < plantCard['insects'].length; index++) {
-  //   insectsArr += `<li>
-  //   <span class="specDesc">${plantCard['insects'][index]}</span>
-  // </li>`;
-  //   console.log(insectsArr);
-  // }
-  // console.log('hi from displayPlantSpecs');
   return `<div class="modal-header">
                   <h1 class="modal-plantName">${finalPlantSpecs[plantCard]['title']}</h1>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -259,7 +266,7 @@ function displayPlantSpecs(plantCard) {
                 </div>
               </article>
               <article class="modal-right">
-              <img src="${finalPlantSpecs[plantCard]['img']}" alt="peace lily plant image" class="modal_img">
+              <img src="${finalPlantSpecs[plantCard]['img']}" alt="plant image" class="modal_img">
               </article>
             </div>`;
 }
