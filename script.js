@@ -87,6 +87,12 @@ const plantSpecs = {
 const finalPlantSpecs = {
   'Spider plant': {},
   'Peace lily': {},
+  'Guzmania Sunnytime': {},
+  'Birdnest fern': {},
+  'White Pothos': {},
+  'Splitleaf Philodendron': {},
+  'Chinese Evergreen': {},
+  'Fidleleaf fig': {},
 };
 
 const card = document.querySelectorAll('.card');
@@ -106,9 +112,52 @@ const settings = {
   },
 };
 
-$.ajax(settings).done(function (response) {
-  console.log(response[63]['common'][0]);
+$.ajax(settings).done(getPlantInfo);
+
+// Object.keys(finalPlantSpecs).forEach((k) => {
+card.forEach(function (c) {
+  c.addEventListener('click', function (e) {
+    // console.log('this is k ' + k);
+    const plantCard = e.currentTarget.dataset.id;
+    console.log('this is the card that is clicked ' + plantCard);
+    if (plantCard in finalPlantSpecs) {
+      console.log('I am ' + plantCard);
+      // console.log(finalPlantSpecs[k]);
+      modalOverlay.classList.toggle('open-modal');
+      let desc = displayPlantSpecs(plantCard);
+      console.log(desc);
+      // console.log(k);
+      modalContent.innerHTML = desc;
+      // attachCloseHandlerToOverlay();
+    }
+  });
 });
+// });
+
+function getPlantInfo(resp) {
+  // build the data
+  for (let i = 0; i < resp.length; i++) {
+    if (resp[i]['common'][0] in finalPlantSpecs) {
+      let key = resp[i]['common'][0];
+      // console.log(resp[i]);
+      // for (let key in finalPlantSpecs) {
+      // console.log(key);
+      finalPlantSpecs[key]['title'] = resp[i]['common'][0];
+      finalPlantSpecs[key]['light'] = resp[i]['ideallight'];
+      finalPlantSpecs[key]['water'] = resp[i]['watering'];
+      finalPlantSpecs[key]['insects'] = resp[i]['insects'];
+      finalPlantSpecs[key]['temp'] =
+        resp[i]['tempmin']['fahrenheit'] +
+        'F' -
+        resp[i]['tempmax']['fahrenheit'] +
+        'F';
+      finalPlantSpecs[key]['climate'] = resp[i]['climate'];
+
+      // console.log(finalPlantSpecs[key]['title']);
+      // }
+    }
+  }
+}
 
 // 2. HANDLE THE CLICK EVENT AND OPEN THE MODAL
 
@@ -119,133 +168,99 @@ function handleCardButtonClick() {
 function attachCloseHandlerToOverlay() {
   const closeBtn = document.querySelector('.close');
   closeBtn.addEventListener('click', function () {
-    // console.log('i am clicked');
-    // console.log(modalOverlay.classList);
     handleCardButtonClick();
   });
 }
 
-card.forEach(function (c) {
-  c.addEventListener('click', function (e) {
-    const plantCard = e.currentTarget.dataset.id;
-    // console.log(plantCard);
-    // console.log(e);
-
-    for (const key in plantSpecs) {
-      if (plantCard === key) {
-        // console.log(plantSpecs[key]['title']);
-        modalOverlay.classList.toggle('open-modal');
-
-        let desc = displayPlantSpecs(plantCard);
-        // console.log(desc);
-        modalContent.innerHTML = desc;
-        attachCloseHandlerToOverlay();
-      }
-    }
-  });
-});
-
-// 3. DISPLAY THE DATE ON THE MODAL
+// 3. DISPLAY THE DATA ON THE MODAL
 
 function displayPlantSpecs(plantCard) {
   let insectsArr = '';
   for (let index = 0; index < ['insects'].length; index++) {
     insectsArr += `<li>
-      <span class="specDesc">${['insects'][index]}</span>
-    </li>`;
+    <span class="specDesc">${finalPlantSpecs[plantCard]['insects'][index]}</span>
+  </li>`;
   }
   // console.log('hi from displayPlantSpecs');
   return `<div class="modal-header">
-                    <h1 class="modal-plantName">${
-                      plantSpecs[plantCard]['title']
-                    }</h1>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <i class="fa fa-times-circle-o modal_closeBtn" aria-hidden="true"></i>
-                    </button>
-                </div><!-- End of Modal-header -->
-                <div class="modal-body">
-                <article class="modal-left">
-                  <div class="specs">
-                    <div class="specTitle">
-                        <h1>light</h1>
-                    </div>
-                    <div class="specIcon">
-                        <img src="icn/sun.png" alt="" class="plantCard_icn">
-                    </div>
-                    <article class="description ">
-                        <ul>
-                            <li><span class="specDesc">${
-                              plantSpecs[plantCard]['light']
-                            }</span></li>
-                        </ul>
-                    </article>
-                </div>
-                <div class="specs">
-                    <div class="specTitle">
-                        <h1>Water</h1>
-                    </div>
-                    <div class="specIcon">
-                        <img src="icn/water.png" alt="" class="plantCard_icn">
-                    </div>
-                    <article class="description">
-                        <ul>
-                            <li><span class="specDesc">${
-                              plantSpecs[plantCard]['water']
-                            }</span></li>
-                        </ul>
-                    </article>
-                </div>
-                <div class="specs">
-                    <div class="specTitle">
-                        <h1>temp</h1>
-                    </div>
-                    <div class="specIcon">
-                        <img src="icn/temp.png" alt="" class="plantCard_icn">
-                    </div>
-                    <div class="description">
-                        <ul>
-                            <li><span class="specDesc">${
-                              plantSpecs[plantCard]['temp']
-                            }</span></li>
-                        </ul>
-                    </div>
-                </div>
+                  <h1 class="modal-plantName">${finalPlantSpecs[plantCard]['title']}</h1>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <i class="fa fa-times-circle-o modal_closeBtn" aria-hidden="true"></i>
+                  </button>
+              </div><!-- End of Modal-header -->
+              <div class="modal-body">
+              <article class="modal-left">
                 <div class="specs">
                   <div class="specTitle">
-                      <h1>insects</h1>
+                      <h1>light</h1>
                   </div>
                   <div class="specIcon">
-                      <img src="icn/insect.png" alt="" class="plantCard_icn">
+                      <img src="icn/sun.png" alt="" class="plantCard_icn">
+                  </div>
+                  <article class="description ">
+                      <ul>
+                          <li><span class="specDesc">${finalPlantSpecs[plantCard]['light']}</span></li>
+                      </ul>
+                  </article>
+              </div>
+              <div class="specs">
+                  <div class="specTitle">
+                      <h1>Water</h1>
+                  </div>
+                  <div class="specIcon">
+                      <img src="icn/water.png" alt="" class="plantCard_icn">
+                  </div>
+                  <article class="description">
+                      <ul>
+                          <li><span class="specDesc">${finalPlantSpecs[plantCard]['water']}</span></li>
+                      </ul>
+                  </article>
+              </div>
+              <div class="specs">
+                  <div class="specTitle">
+                      <h1>temp</h1>
+                  </div>
+                  <div class="specIcon">
+                      <img src="icn/temp.png" alt="" class="plantCard_icn">
                   </div>
                   <div class="description">
                       <ul>
-                        ${insectsArr}
+                          <li><span class="specDesc">${finalPlantSpecs[plantCard]['temp']}</span></li>
                       </ul>
                   </div>
               </div>
-              
-                <div class="specs">
-                    <div class="specTitle">
-                        <h1>humidity</h1>
-                    </div>
-                    <div class="specIcon">
-                        <img src="icn/humidity.png" alt="" class="plantCard_icn">
-                    </div>
-                    <div class="description">
-                        <ul>
-                            <li><span class="specDesc">${
-                              plantSpecs[plantCard][('humidity', 'humidity')]
-                            }</span></li>
-                        </ul>
-                    </div>
+              <div class="specs">
+                <div class="specTitle">
+                    <h1>insects</h1>
+                </div>
+                <div class="specIcon">
+                    <img src="icn/insect.png" alt="" class="plantCard_icn">
+                </div>
+                <div class="description">
+                    <ul>
+                    
+                      ${finalPlantSpecs[plantCard]['insects']}
+                    </ul>
+                </div>
+            </div>
+              <div class="specs">
+                  <div class="specTitle">
+                      <h1>climate</h1>
                   </div>
-                </article>
-                <article class="modal-right">
-                <img src="${
-                  plantSpecs[plantCard]['img']
-                }" alt="peace lily plant image" class="modal_img">
-                </article>
-              </div>`;
+                  <div class="specIcon">
+                      <img src="icn/humidity.png" alt="" class="plantCard_icn">
+                  </div>
+                  <div class="description">
+                      <ul>
+                          <li><span class="specDesc">${finalPlantSpecs[plantCard]['climate']}</span></li>
+                      </ul>
+                  </div>
+                </div>
+              </article>
+              <article class="modal-right">
+              <img src="${finalPlantSpecs[plantCard]['img']}" alt="peace lily plant image" class="modal_img">
+              </article>
+            </div>`;
 }
 
 // --------------PREVIOUS CODE --------------------------
