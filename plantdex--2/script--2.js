@@ -103,11 +103,7 @@ const settings = {
   },
 };
 
-$.ajax(settings).done(function (response) {
-  for (let index = 0; index < response.length; index++) {
-    console.log(response[index]['common'][0]);
-  }
-});
+$.ajax(settings).done(getPlantInfo);
 
 // HANDLE THE CLICK EVENT ON EACH CARD AND OPEN THE MODAL
 card.forEach(function (a) {
@@ -139,6 +135,13 @@ function handleCloseModalBtn() {
     modalOverlay.classList.toggle('open-modal');
     // isAttached = true;
   });
+}
+
+//GET THE DATA FROM THE SERVER
+function getPlantInfo(response) {
+  for (let index = 0; index < response.length; index++) {
+    console.log(response[index]['common'][0]);
+  }
 }
 
 // DISPLAY PLANTINFO ON THE MODAL
