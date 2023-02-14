@@ -157,8 +157,29 @@ const finalPlantSpecs = {
   'Epipremnum aureum': {
     img: 'images/Epipremnum aureum.jpeg',
   },
+  Herringbone: {
+    img: 'images/Herringbone.jpg',
+  },
   'Wax plant': {
     img: 'images/Wax plant.jpeg',
+  },
+  'Red Philodendron': {
+    img: 'images/Red Philodendron.jpeg',
+  },
+  'Velvet leaf vine': {
+    img: 'images/Velvet leaf vine.jpeg',
+  },
+  'Elephant foot': {
+    img: 'images/Elephant foot.jpeg',
+  },
+  'Lime philodendron': {
+    img: 'images/Lime philodendron.jpeg.crdownload',
+  },
+  'English ivy': {
+    img: 'images/English ivy.jpeg',
+  },
+  'Boston fern': {
+    img: 'images/Boston fern1.jpeg',
   },
 };
 //DECLARE VARIABLES
