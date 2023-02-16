@@ -1,5 +1,5 @@
 // const plantSpecs = {
-//   'Spidar plant': {
+//   'Spider plant': {
 //     name: 'spiderplant',
 //     title: 'Spider Plant',
 //     light: 'Shade to partial sun',
@@ -9,7 +9,7 @@
 //       'preferes well draining soil',
 //       'Add perlite or orchid bark to potting mix',
 //     ],
-//     humidity: 'average',
+//     climate: 'average',
 //     img: 'images/4chlorpohytumcurlyspiderplat_bonnie_2_2000x.jpeg',
 //   },
 //   'Peace lily': {
@@ -19,67 +19,67 @@
 //     water: 'water when top soil feels dry',
 //     temp: '65-80F',
 //     insects: ['peat based potting mix with perlite and sand'],
-//     humidity: 'average',
+//     climate: 'average',
 //     img: 'images/peace-lily-houseplant.jpeg',
 //   },
-//   bromeliad: {
+//   'Silver vase': {
 //     name: 'bromeliad',
-//     title: 'Neoregelia Bromeliad',
+//     title: 'Guzmania Sunnytime',
 //     light: 'indoors with natural indirect sunlight',
 //     water: 'water when top soil feels dry',
 //     temp: '65-80F',
 //     insects: ['preferes well draining soil'],
-//     humidity: 'average',
+//     climate: 'average',
 //     img: 'images/neoregelia-bromeliad-plant.jpeg',
 //   },
-//   birdsNest: {
+//   'Birdnest fern': {
 //     name: 'Birds-Nest-Fern',
 //     title: 'Birds Nest Fern',
 //     light: 'indoors with natural indirect sunlight',
 //     water: 'dont let the top of the soil dry',
 //     temp: '65-80F',
 //     insects: ['peat based potting mix with perlite and sand'],
-//     humidity: 'above average',
+//     climate: 'above average',
 //     img: 'images/birds-nest-fern-plant.jpeg',
 //   },
-//   marblepothos: {
+//   'White Pothos': {
 //     name: 'marblepothos',
 //     title: 'Marble Pothos',
 //     light: 'indoors with natural indirect sunlight',
 //     water: 'water when top soil feels dry',
 //     temp: '65-80F',
 //     insects: ['peat based potting mix with perlite and sand'],
-//     humidity: 'average',
+//     climate: 'average',
 //     img: 'images/pothos-marble-queen-plant.jpeg',
 //   },
-//   splitleafphilodendron: {
+//   'Splitleaf Philodendron': {
 //     name: 'splitleafphilodendron',
 //     title: 'Split Leaf Philodendron',
 //     light: 'indoors with natural indirect sunlight',
 //     water: 'water when top soil feels dry',
 //     temp: '65-80F',
 //     insects: ['peat based potting mix with perlite and sand'],
-//     humidity: 'average',
+//     climate: 'average',
 //     img: 'images/splitleaf.jpeg',
 //   },
-//   aglaonema: {
+//   'Chinese Evergreen': {
 //     name: 'Aglaonema-Silver-Bay',
 //     title: 'Aglaonema Silver Bay',
 //     light: 'indoors with natural indirect sunlight',
 //     water: 'water when top soil feels dry',
 //     temp: '65-80F',
 //     insects: ['peat based potting mix with perlite and sand'],
-//     humidity: 'average',
+//     climate: 'average',
 //     img: 'images/aglaonema-silver-bay-plants-close.jpeg',
 //   },
-//   fiddleleaffig: {
+//   'Fidleleaf fig': {
 //     name: 'fiddleleaffig',
 //     title: 'Fiddle Leaf Fig',
 //     light: 'indoors with natural indirect sunlight',
 //     water: 'water when top soil feels dry',
 //     temp: '65-80F',
 //     insects: ['peat based potting mix with perlite and sand'],
-//     humidity: 'average',
+//     climate: 'average',
 //     img: 'images/fiddleleaffig.jpeg',
 //   },
 // };
@@ -91,7 +91,7 @@ const finalPlantSpecs = {
   'Peace lily': {
     img: 'images/peace-lily-houseplant.jpeg',
   },
-  'Guzmania Sunnytime': {
+  'Silver vase': {
     img: 'images/neoregelia-bromeliad-plant.jpeg',
   },
   'Birdnest fern': {
@@ -109,13 +109,86 @@ const finalPlantSpecs = {
   'Fidleleaf fig': {
     img: 'images/fiddleleaffig.jpeg',
   },
+  'Rosy Maidenhair': {
+    img: 'images/maidenhair.jpeg',
+  },
+  'Elephant ear': {
+    img: 'images/Elephant ear.jpeg',
+  },
+  'Cast iron plant': {
+    img: 'images/cast-iron.jpeg',
+  },
+  'Bronze Anthurium': {
+    img: 'images/AnthuriumBronze.jpeg',
+  },
+  'Fish tail palm': {
+    img: 'images/fishtailpam.jpeg',
+  },
+  'Medallion Calathea': {
+    img: '../images/MedallionCalathea.jpeg',
+  },
+  'Bamboo palm': {
+    img: 'images/bamboopalm.jpeg',
+  },
+  Stromante: {
+    img: 'images/stomanthe.jpeg',
+  },
+  'Jade Plant': {
+    img: 'images/jadeplant.jpeg',
+  },
+  'Stiped calathea': {
+    img: 'images/Stiped calathea.jpeg',
+  },
+  'Yellow Malaysian Dracaena': {
+    img: 'images/Yellow Malaysian Dracaena.jpeg',
+  },
+  'Sago palm': {
+    img: 'images/sagopalm.jpeg',
+  },
+  'Rubber plant': {
+    img: 'images/Rubber plant.jpeg',
+  },
+  'Orchid cactus': {
+    img: 'images/Orchid cactus.jpeg',
+  },
+  'Weeping fig': {
+    img: 'images/Weeping fig.jpeg',
+  },
+  'Epipremnum aureum': {
+    img: 'images/Epipremnum aureum.jpeg',
+  },
+  Herringbone: {
+    img: 'images/Herringbone.jpg',
+  },
+  'Wax plant': {
+    img: 'images/Wax plant.jpeg',
+  },
+  'Red Philodendron': {
+    img: 'images/Red Philodendron.jpeg',
+  },
+  'Velvet leaf vine': {
+    img: 'images/Velvet leaf vine.jpeg',
+  },
+  'Elephant foot': {
+    img: 'images/Elephant foot.jpeg',
+  },
+  'Lime philodendron': {
+    img: 'images/Lime philodendron.jpeg.crdownload',
+  },
+  'English ivy': {
+    img: 'images/English ivy.jpeg',
+  },
+  'Boston fern': {
+    img: 'images/Boston fern1.jpeg',
+  },
 };
 
+//DECLARE VARIABLES
 const card = document.querySelectorAll('.card');
 const modalOverlay = document.querySelector('.modal-overlay');
-let modalContent = document.querySelector('.modal-content');
+const modalContent = document.querySelector('.modal-content');
 
-// 1. GET THE DATA ON PAGE LOAD
+// let isAttached = false;
 
 const settings = {
   async: true,
@@ -130,143 +203,142 @@ const settings = {
 
 $.ajax(settings).done(getPlantInfo);
 
-// 2. HANDLE THE CLICK EVENT AND OPEN THE MODAL
-// Object.keys(finalPlantSpecs).forEach((k) => {
-card.forEach(function (c) {
-  c.addEventListener('click', function (e) {
-    // console.log('this is k ' + k);
+// HANDLE THE CLICK EVENT ON EACH CARD AND OPEN THE MODAL
+card.forEach(function (a) {
+  a.addEventListener('click', function (e) {
     const plantCard = e.currentTarget.dataset.id;
-    // console.log('this is the card that is clicked ' + plantCard);
+    // console.log('I am clicked');
+    // console.log(plantCard);
     if (plantCard in finalPlantSpecs) {
       // console.log('I am ' + plantCard);
-      // console.log(finalPlantSpecs[k]);
       modalOverlay.classList.toggle('open-modal');
-      let desc = displayPlantSpecs(plantCard);
-      // console.log(desc);
-      // console.log(k);
-      modalContent.innerHTML = desc;
-      attachCloseHandlerToOverlay();
+      let plantInfo = displayPlantInfo(plantCard);
+      // console.log(plantInfo);
+      modalContent.innerHTML = plantInfo;
+      // if (isAttached === false) {
+      handleCloseModalBtn();
+      // }
     }
   });
 });
 
-function handleCardButtonClick() {
+function handleOpenModal() {
   modalOverlay.classList.toggle('open-modal');
 }
-
-function attachCloseHandlerToOverlay() {
+function handleCloseModalBtn() {
   const closeBtn = document.querySelector('.close');
+
   closeBtn.addEventListener('click', function () {
-    handleCardButtonClick();
+    // console.log('I am clicked from closing');
+    modalOverlay.classList.toggle('open-modal');
+    // isAttached = true;
   });
 }
 
-// 3. POPULATE THE DATA
+//GET THE DATA FROM THE SERVER
+function getPlantInfo(response) {
+  for (let index = 0; index < response.length; index++) {
+    if (response[index]['common'][0] in finalPlantSpecs) {
+      let key = response[index]['common'][0];
+      // console.log(response[index]);
 
-function getPlantInfo(resp) {
-  // build the data
-  for (let i = 0; i < resp.length; i++) {
-    if (resp[i]['common'][0] in finalPlantSpecs) {
-      let key = resp[i]['common'][0];
-      // console.log(resp[i]);
-      // for (let key in finalPlantSpecs) {
-      // console.log(key);
-      finalPlantSpecs[key]['title'] = resp[i]['common'][0];
-      finalPlantSpecs[key]['light'] = resp[i]['ideallight'];
-      finalPlantSpecs[key]['water'] = resp[i]['watering'];
-      finalPlantSpecs[key]['insects'] = resp[i]['insects'];
+      finalPlantSpecs[key]['title'] = response[index]['common'][0];
+      finalPlantSpecs[key]['light'] = response[index]['ideallight'];
+      finalPlantSpecs[key]['water'] = response[index]['watering'];
       finalPlantSpecs[key]['temp'] =
-        resp[i]['tempmin']['fahrenheit'] +
-        'F -' +
-        resp[i]['tempmax']['fahrenheit'] +
-        'F';
-      finalPlantSpecs[key]['climate'] = resp[i]['climate'];
+        response[index]['tempmin']['fahrenheit'] +
+        'F ' +
+        ' - ' +
+        response[index]['tempmax']['fahrenheit'] +
+        ' F';
+      finalPlantSpecs[key]['insects'] = response[index]['insects'];
 
-      // console.log(finalPlantSpecs[key]['title']);
+      // for (let i = 0; i < finalPlantSpecs[key]['insects'].length; i++) {
+      //   finalPlantSpecs[key]['insects'][i] = response[index]['insects'][i];
       // }
+      finalPlantSpecs[key]['climate'] = response[index]['climate'];
     }
   }
 }
 
-// 3. DISPLAY THE DATA ON THE MODAL
-
-function displayPlantSpecs(plantCard) {
+// DISPLAY PLANTINFO ON THE MODAL
+function displayPlantInfo(plantCard) {
   return `<div class="modal-header">
-                  <h1 class="modal-plantName">${finalPlantSpecs[plantCard]['title']}</h1>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <i class="fa fa-times-circle-o modal_closeBtn" aria-hidden="true"></i>
-                  </button>
-              </div><!-- End of Modal-header -->
-              <div class="modal-body">
-              <article class="modal-left">
-                <div class="specs">
-                  <div class="specTitle">
-                      <h1>light</h1>
-                  </div>
-                  <div class="specIcon">
-                      <img src="icn/sun.png" alt="" class="plantCard_icn">
-                  </div>
-                  <article class="description ">
-                      <ul>
-                          <li><span class="specDesc">${finalPlantSpecs[plantCard]['light']}</span></li>
-                      </ul>
-                  </article>
-              </div>
-              <div class="specs">
-                  <div class="specTitle">
-                      <h1>Water</h1>
-                  </div>
-                  <div class="specIcon">
-                      <img src="icn/water.png" alt="" class="plantCard_icn">
-                  </div>
-                  <article class="description">
-                      <ul>
-                          <li><span class="specDesc">${finalPlantSpecs[plantCard]['water']}</span></li>
-                      </ul>
-                  </article>
-              </div>
-              <div class="specs">
-                  <div class="specTitle">
-                      <h1>temp</h1>
-                  </div>
-                  <div class="specIcon">
-                      <img src="icn/temp.png" alt="" class="plantCard_icn">
-                  </div>
-                  <div class="description">
-                      <ul>
-                          <li><span class="specDesc">${finalPlantSpecs[plantCard]['temp']}</span></li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="specs">
-                <div class="specTitle">
-                    <h1>insects</h1>
-                </div>
-                <div class="specIcon">
-                    <img src="icn/insect.png" alt="" class="plantCard_icn">
-                </div>
-                <div class="description">
-                    <ul>
-                      <li><span class="specDesc">${finalPlantSpecs[plantCard]['insects']}</span></li> 
-                    </ul>
-                </div>
-            </div>
-              <div class="specs">
-                  <div class="specTitle">
-                      <h1>climate</h1>
-                  </div>
-                  <div class="specIcon">
-                      <img src="icn/humidity.png" alt="" class="plantCard_icn">
-                  </div>
-                  <div class="description">
-                      <ul>
-                          <li><span class="specDesc">${finalPlantSpecs[plantCard]['climate']}</span></li>
-                      </ul>
-                  </div>
-                </div>
-              </article>
-              <article class="modal-right">
-              <img src="${finalPlantSpecs[plantCard]['img']}" alt="plant image" class="modal_img">
-              </article>
-            </div>`;
+                    <h1 class="modal-plantName">${finalPlantSpecs[plantCard]['title']}</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fa fa-times-circle-o modal_closeBtn" aria-hidden="true"></i>
+                    </button>
+                </div><!-- End of Modal-header -->
+                <div class="modal-body">
+                    <article class="modal-left">
+                        <div class="specs">
+                            <div class="specTitle">
+                                <h1>light</h1>
+                            </div>
+                            <div class="specIcon">
+                                <img src="icn/sun.png" alt="" class="plantCard_icn">
+                            </div>
+                            <article class="description ">
+                                <ul>
+                                    <li><span class="specDesc">${finalPlantSpecs[plantCard]['light']}</span></li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="specs">
+                            <div class="specTitle">
+                                <h1>Water</h1>
+                            </div>
+                            <div class="specIcon">
+                                <img src="icn/water.png" alt="" class="plantCard_icn">
+                            </div>
+                            <article class="description">
+                                <ul>
+                                    <li><span class="specDesc">${finalPlantSpecs[plantCard]['water']}</span></li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="specs">
+                            <div class="specTitle">
+                                <h1>temp</h1>
+                            </div>
+                            <div class="specIcon">
+                                <img src="icn/temp.png" alt="" class="plantCard_icn">
+                            </div>
+                            <div class="description">
+                                <ul>
+                                    <li><span class="specDesc">${finalPlantSpecs[plantCard]['temp']}</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="specs">
+                            <div class="specTitle">
+                                <h1>insects</h1>
+                            </div>
+                            <div class="specIcon">
+                                <img src="icn/insect.png" alt="" class="plantCard_icn">
+                            </div>
+                            <div class="description">
+                                <ul>
+                                    <li><span class="specDesc">${finalPlantSpecs[plantCard]['insects']}</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="specs">
+                            <div class="specTitle">
+                                <h1>climate</h1>
+                            </div>
+                            <div class="specIcon">
+                                <img src="icn/humidity.png" alt="" class="plantCard_icn">
+                            </div>
+                            <div class="description">
+                                <ul>
+                                    <li><span class="specDesc">${finalPlantSpecs[plantCard]['climate']}</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="modal-right">
+                        <img src="${finalPlantSpecs[plantCard]['img']}" alt="plant image" class="modal_img">
+                    </article>
+                </div>`;
 }

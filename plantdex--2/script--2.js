@@ -182,6 +182,7 @@ const finalPlantSpecs = {
     img: 'images/Boston fern1.jpeg',
   },
 };
+
 //DECLARE VARIABLES
 const card = document.querySelectorAll('.card');
 const modalOverlay = document.querySelector('.modal-overlay');
